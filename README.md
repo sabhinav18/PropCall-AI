@@ -80,7 +80,6 @@ No confidential or unauthorized company data. Prices are demo-only. **No guarant
 
 ```bash
 # any static server
-cd real_estate_ai_caller
 python3 -m http.server 8080
 # open http://localhost:8080
 ```
@@ -110,12 +109,4 @@ Or open `index.html` directly (some browsers restrict mic on `file://` — prefe
 5. RERA-verified live inventory API.  
 6. Call recording + supervisor dashboard.
 
-## Assignment compliance notes
 
-- Conversation is **generative from state + templates**, not a fixed IVR recording.  
-- Agent **refuses false commitments / guaranteed returns**.  
-- Functional vs simulated parts are listed in the in-app **Architecture** tab and `SUBMISSION.md`.
-
-## License
-
-Demo assignment code — free to use for interview evaluation.
