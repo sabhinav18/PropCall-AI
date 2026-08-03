@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PropCall AI — Real Estate Voice Agent</title>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.0/dist/index.global.js"
+    integrity="sha384-nWTzRTCY/9V4Bo352ehygr1c4cnst4XN6lMR3fipakEQrhVpc0hEM5Dii3Amz0sT"
+    crossorigin="anonymous"
+  ></script>
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style>
+  <script>
+    document.documentElement.classList.toggle(
+      'dark',
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    );
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-dvh text-sm antialiased bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100">
+  <div id="app" class="min-h-dvh flex flex-col"></div>
+  <script src="project-data.js"></script>
+  <script src="nlu.js"></script>
+  <script src="conversation.js"></script>
+  <script src="voice.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
